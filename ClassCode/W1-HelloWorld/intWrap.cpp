@@ -9,8 +9,8 @@ using namespace std;
 
 
 int main(){
-    unsigned a = 0; // Watch what happens around 4 billion
-    //int a = 0; // Watch what happens around 2 billion
+    //unsigned a = 0; // Watch what happens around 4 billion
+    int a = 0; // Watch what happens around 2 billion
     while(true){ // This will loop forever!
       cout << a << endl;
       a = a + 600000;   // Arbitrary increment to reach the limits in a few seconds.

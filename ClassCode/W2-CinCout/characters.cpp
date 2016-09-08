@@ -10,10 +10,13 @@
 using namespace std;
 
 int main(){
+    int temp = 0;
     // Start at 65, and go to 125 (We'll get to for loops later)
-    for(int i = 65; i < 126; i++){
+    // We removed 65 below and put in 'A', and thus removed the 'magic number'
+    for(int i = 'A'; i < 'Z'; i++){
+
       cout << (char)i << ", ";    // Conversion is important, otherwise
-                                  // it will print the number.
+      cout << temp;                           // it will print the number.
     }
 
     return 0;
