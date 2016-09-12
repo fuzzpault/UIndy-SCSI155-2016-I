@@ -10,17 +10,17 @@ using namespace std;
 int main(){
     int a = 0;
     // ++a - preincrement
-    // a++ - postincrement
-    cout << a << endl;
+    // a++ - postincrement   a = a + 1
+    cout << ++a << endl;
     //a++;
     //++a;
-    a += 5; // same as a = a + 5
-    a *= 10;
-    cout << a << endl;
+    //a += 5; // same as a = a + 5
+    //a *= 10;
+    cout << ++a << endl;
     //a++;
     //++a;
-    a += 5;
-    cout << a << endl;
+    //a += 5;
+    cout << ++a << endl;
     
     return 0; 
 }
