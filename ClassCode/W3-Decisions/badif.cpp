@@ -8,7 +8,7 @@
 using namespace std;
 
 int main(){
- if( 0 || 1);cout << "true\n";
+ if( 0 && 1)cout << "true\n"; cout << "more";
      cout << "more here\n";
 
     
