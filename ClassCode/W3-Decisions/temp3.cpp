@@ -1,5 +1,5 @@
 /* Name: Paul Talaga
-   Date: 9/13/16
+   Date: 9/15/16
    Desc: Possible solution to temp.cpp quiz.
 */
 #include <iostream>
