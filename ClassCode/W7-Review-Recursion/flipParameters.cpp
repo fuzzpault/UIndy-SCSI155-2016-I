@@ -1,3 +1,7 @@
+/* Name: Paul Talaga
+   Date: 10/10/16
+   Desc: Solution to Exam 1 Practice coding problem.
+*/
 #include <iostream>
 
 using namespace std;

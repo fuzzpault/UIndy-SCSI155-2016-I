@@ -8,25 +8,27 @@
 using namespace std;
 
 int add(int a, int b){
-  // TODO: Change me
-  return 0;
+  return a + b;
 }
 
 int mult(int a, int b){
-  // TODO: Change me
-  return 0;
+  return a * b;
 }
 
 void doSomething(int a){
-  // TODO: Change me
+  cout << a + 1;
 }
 
 void doSomethingElse(int& a){
-  // TODO: Change me
+  a = 10;
 }
 
 void printRange(int a, int b){
-  // TODO: Change me
+  cout << "[";
+  for(int i = a; i <=b; i++){
+    cout << i << " ";
+  }
+  cout << "]";
 }
 
 int main(){
