@@ -7,7 +7,7 @@
 using namespace std;
 
 int main(){
-  int a = 5 > 30;
+  int a = 5 > 3;
   
   cout << a;
 }

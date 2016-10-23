@@ -14,4 +14,8 @@ int main(){
   cout << c << endl;
   cout << d << endl;
   cout << e << endl;
+  {
+  int a = 9;
+  
+  };
 }
