@@ -11,6 +11,7 @@ Description: <fill me in>
 #include <iomanip>
 #include <stdlib.h>
 #include <math.h>
+#include <time.h>
 
 using namespace std;
 
@@ -90,7 +91,15 @@ int main(){
   cout << "51.8331 = " << stdev(f1, 4) << endl;
   
   cout << endl << "removedups:" << endl;
-  vector<int> v1 = {1,2,3,3,4,5,1};
+  //vector<int> v1 = {1,2,3,3,4,5,1};  // Not supported in C++98
+  vector<int> v1;
+  v1.push_back(1);
+  v1.push_back(2);
+  v1.push_back(3);
+  v1.push_back(3);
+  v1.push_back(4);
+  v1.push_back(5);
+  v1.push_back(1);
   vector<int> v12 = removeDups(v1);
   cout << "[1,2,3,4,5] = " << print(v12.data(), v12.size()) << endl;
   cout << "5 = " << v12.size() << endl;
