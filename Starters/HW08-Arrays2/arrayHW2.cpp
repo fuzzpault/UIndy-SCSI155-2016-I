@@ -27,11 +27,11 @@ float stdev(float array[], int length){
   // Fill me in
 }
 
-float add(float array[], int length, float number){
+void add(float array[], int length, float number){
   // Fill me in
 }
 
-float mult(float array[], int length, float number){
+void mult(float array[], int length, float number){
   // Fill me in
 }
 
