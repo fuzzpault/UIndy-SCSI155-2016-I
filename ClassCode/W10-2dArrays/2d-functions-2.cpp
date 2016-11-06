@@ -1,3 +1,9 @@
+/* Name: Paul Talaga
+   Date: 10/31/16
+   Desc: Demonstration of passing a 2d array to a function. All dimensions,
+         EXCEPT the first need to be specified in the function declaration.
+*/
+#in
 #include <iostream>
 #include <iomanip>
 

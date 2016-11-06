@@ -1,3 +1,9 @@
+/* Name: Paul Talaga
+   Date: 11/3/16
+   Desc: Demo of writing a function to accept and return a vector.
+         This returns a vector which only contains the even values in the sent
+         vector - similar to remove dups!
+*/
 #include <iostream>
 #include <vector>
 
@@ -11,7 +17,7 @@ vector<unsigned long> justEvens(vector<unsigned long> bob){
   // mod, for loop, if, 
   vector<unsigned long> ret;
   for(int i = 0; i < bob.size(); i++){
-    // is bob[i] in ret already? No? push it to the end.
+    // For removeDups - is bob[i] in ret already? No? push it to the end.
     if(bob[i] % 2 == 0){ // even
       ret.push_back(bob[i]);
     }

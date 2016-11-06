@@ -1,3 +1,8 @@
+/* Name: Paul Talaga
+   Date: 10/31/16
+   Desc: Demonstration declaring, filling, and printing a 2d array.
+         Going to higher dimensions is possible by adding more [..]
+*/
 #include <iostream>
 #include <iomanip>
 
