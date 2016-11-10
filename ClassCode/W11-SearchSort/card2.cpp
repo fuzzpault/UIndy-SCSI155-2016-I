@@ -1,3 +1,10 @@
+/* Name: Paul Talaga
+   Date: 11/8/16
+   Desc: Creates a deck of cards, encoded as integers, into an array, 
+         shuffles them, and creates 2 hands, then prints the hands out.
+         This is a great starter for the HW!
+         For completeness, this is done using both arrays and vectors.
+*/
 #include <iostream>
 #include <vector>
 #include <cstdlib>
