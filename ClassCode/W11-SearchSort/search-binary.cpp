@@ -44,7 +44,7 @@ int main(){
   
   count = 0;
   
-  // As written this gets stuck in an infine loop
+  
   int to_find = bigVector[bigVector.size()-1];
   int start = 0;
   int end = bigVector.size() - 1;

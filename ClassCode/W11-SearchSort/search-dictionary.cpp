@@ -21,6 +21,12 @@ int main(){
   while(!file.eof()){
     string word;
     file >> word;
+    // make lowercase
+    for(int i = 0; i < word.length(); i++){
+      if(word[i] >= 'A' && word[i] <= 'Z'){
+        word[i] = word[i] - 'A' + 'a';
+      }
+    }
     words.push_back(word);
   }
   clock_t stop = clock();
@@ -28,40 +34,50 @@ int main(){
   
   file.close();
   
-  cout << "Words: " << words.size() << endl;
+  cout << "Num Words Loaded: " << words.size() << endl;
+  
+  // Keep asking for words to look up.
   while(1){
     string word;
     cout << "What word should I search for?" << endl;
     cin >> word;
     
+    int compares = 0;
+    
+    // Linear search
     start = clock();
     for(int i = 0; i < words.size(); i++){
+      compares++;
       if(word == words[i]){
         cout << word << " is a word!\n";
         break;
       }
     }
+    // Repeat the search 100 times so the timing code has less error.
     for(int j = 0; j < 100; j++){
       for(int i = 0; i < words.size(); i++){
         if(word == words[i]){
-          break;
+          break; // Will break out of the inner for loop, not the j one.
         }
       }
     }
     
-    cout << (float)(clock() - start) * 100 / CLOCKS_PER_SEC << " ms to search." <<endl;
+    cout << (float)(clock() - start) * 100 / CLOCKS_PER_SEC << " ms to do linear search." <<endl;
+    cout << "Compares for linear: " << compares << endl;
   
-    // Currently does not work correctly.
     // Binary search
+    compares = 0;
     start = clock();
     int bstart = 0;
     int end = words.size();
-    while(end >= bstart){
+    while(end > bstart){
       int middle = bstart + (end - bstart) / 2;
+      compares++;
       if( words[middle] == word){
         cout << "Found a " << word << " in index " << middle << endl;
         break;
       }
+      compares++;
       if(words[middle] > word){
         end = middle - 1;
       }else{
@@ -69,6 +85,27 @@ int main(){
       }
       
     }
+    
+    // Repeat the search 100 times so the timing code has less error.
+    for(int j = 0; j < 100; j++){
+      bstart = 0;
+      end = words.size();
+      while(end > bstart){
+        int middle = bstart + (end - bstart) / 2;
+        //cout << words[middle] << endl;
+        if( words[middle] == word){
+          //cout << "Found a " << word << " in index " << middle << endl;
+          break;
+        }
+        if(words[middle] > word){
+          end = middle - 1;
+        }else{
+          bstart = middle + 1;
+        }
+        
+      }
+    }
     cout << (float)(clock() - start) * 100 / CLOCKS_PER_SEC << " ms to search binary." <<endl;
+    cout << "Compares for binary: " << compares << endl;
   }
 }
