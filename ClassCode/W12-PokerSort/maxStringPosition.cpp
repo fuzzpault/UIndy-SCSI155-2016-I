@@ -1,3 +1,8 @@
+/* Name: Paul Talaga
+   Date: 11/15/16
+   Desc: Solution to maxASCIIStringPosition problem on practice exam.
+*/
+
 #include <iostream>
 #include <vector>
 #include <string>
