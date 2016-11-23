@@ -23,8 +23,10 @@ void print(int a[], int length){
 //     are in their correct spots and need to be checked.
 void bubble(int a[], int length){
   int count = 0;
+  int b_count = 0;
   for(int j = 0; j < length; j++){  // Do n bubbles
     bool didFlip = false;
+    b_count++;
     for(int i = 0; i < length-1-j; i++){
       count++;
       if(a[i] > a[i+1]){ // Out of order, so flip!
@@ -37,10 +39,12 @@ void bubble(int a[], int length){
     if(didFlip == false){
       // Print out the number of comparisons done to see speed optimization.
       cout << "count: " << count << endl;
+      cout << "bubble count: " << b_count << endl;
       return;
     }
   }
   cout << "count: " << count << endl;
+  cout << "bubble count: " << b_count << endl;
 }
 
 bool isSorted(int a[], int length){
