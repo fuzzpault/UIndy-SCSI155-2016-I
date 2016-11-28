@@ -4,6 +4,7 @@
 */
 #include <iostream>
 #include <cassert>
+#include <time.h>
 
 using namespace std;
 
