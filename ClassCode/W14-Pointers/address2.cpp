@@ -11,7 +11,7 @@ int main(){
   int a = 5;
   int b = 10;
   
-  int* p = &a;
+  int* p =0;
   
   cout << a << " is at " << &a << endl;
   cout << b << " is at " << &b << endl;
